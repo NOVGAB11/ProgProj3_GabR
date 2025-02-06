@@ -1,13 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/myStyleSheet.css">
+        <title>Your Cosmic Guide</title>
+    </head>
+    <body>
+
+        <audio id="Audio">
+            <source src="assets/perfect-beauty-191271.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="content">
+            <div>
+                <h1 class="main-title">Hi! I am the Medium between you and the Cosmos!</h1>
+                <h2>Click on the button for a message from the Cosmos...</h2>
+            </div>
+
+            <div class="UserSection">
+                <button id="UserButton" type="button">Talk to me</button>
+                <p id="UsersFortune">The cosmos answer with...</p>
+            </div>
+        </div>            
+        <script src="scripts/myScripts.js"></script>
+    </body>
 </html>
