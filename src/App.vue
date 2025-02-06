@@ -53,14 +53,6 @@ const fortunes = [
     </section>
 
 
-
-  
-
-
-
-
-
-
   </main>
 </template>
 
