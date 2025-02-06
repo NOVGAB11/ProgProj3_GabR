@@ -1,4 +1,22 @@
 <script setup>
+import {ref} from 'vue';
+
+const fortuneMessage = ref('')
+const audio = ref(null);
+
+const fortunes = [
+    "Someone will surprise you with a gift this month. ๑(◕‿◕)๑",
+    "Patience is a virtue and you are virtuous. (づ ◕‿◕ )づ",
+    "All that hard work will pay off soon, trust the process. ♡(ŐωŐ人)",
+    "You will soon be taking a trip, an adventure awaits! ▼(´ᴥ`)▼",
+    "Give yourself time today to recharge and do some soul searching. ♡(ŐωŐ人)",
+    "You are beautiful, you are smart, you are amazing, YOU ARE WORTHY! ( ͡° ᴥ ͡° ʋ)",
+    "Happiness is just around the corner. (=◉ᆽ◉=)",
+    "You are Kenough!(づ ◕‿◕ )づ",
+    "You are HIM, you've always been HIM!(=◉ᆽ◉=)",
+    "Your future is so bright you need sunglasses!๑(◕‿◕)๑",
+    "You've got this!"
+];
 
 </script>
 
