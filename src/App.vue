@@ -5,6 +5,12 @@
 <template>
   <main class="app"> 
    
+    <audio id="Audio" ref="audio">
+      <source src="src\assets\perfect-beauty-191271.mp3" type="audio/mp3"/>
+    </audio>
+
+
+
     <section class="greeting">
       <h1 class="main-title">Hi! I am the Medium between you and the Cosmos!</h1>
       <h2>Click on the button for a message from the Cosmos...</h2>
@@ -14,7 +20,9 @@
 
       <button @click="showFortune" id="UserButton" type="button">Talk to me</button>
       <p v-if="fortuneMessage" id ="UsersFortune">{{ fortuneMessage}}</p>
-      
+
+
+
     </section>
 
 
