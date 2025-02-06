@@ -4,6 +4,16 @@ import {ref} from 'vue';
 const fortuneMessage = ref('')
 const audio = ref(null);
 
+const showFortune = () => {
+  const randomIndex = Math.floor(Math.random() * fortunes.lenght);
+  fortuneMessage.value = fortunes[randomIndex];
+
+  if(audio.value && audio.value.paused) {
+    audio.value.play();
+  }
+};
+
+
 const fortunes = [
     "Someone will surprise you with a gift this month. ๑(◕‿◕)๑",
     "Patience is a virtue and you are virtuous. (づ ◕‿◕ )づ",
@@ -17,6 +27,7 @@ const fortunes = [
     "Your future is so bright you need sunglasses!๑(◕‿◕)๑",
     "You've got this!"
 ];
+
 
 </script>
 
